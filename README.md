@@ -14,7 +14,7 @@
 
 ## Links to application deployment
 
-  App deployed on Heroku [here]()
+  App deployed on Heroku [here](https://basic-api-server-lab03.herokuapp.com/)
 
   Pull req from dev found [here]()
 
