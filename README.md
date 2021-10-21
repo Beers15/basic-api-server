@@ -31,14 +31,28 @@
   * Path: /food/:id
     * returns the specified food item with supplied id
 
+  * Path: /clothing
+    * returns all clothing items in db as an array
+  * Path: /clothing/:id
+    * returns the specified clothing item with supplied id
+
 * REST Method POST
   * Path: /food
+    * takes a JSON obj as input and returns the record that was added to the DB
+
+  * Path: /clothing
     * takes a JSON obj as input and returns the record that was added to the DB
 
 * REST Method PUT
   * Path: /food/:id
     * takes a JSON obj as input and returns the record that was updated in the DB, with updated data included
 
+  * Path: /clothing/:id
+    * takes a JSON obj as input and returns the record that was updated in the DB, with updated data included
+
 * REST Method DELETE
   * Path: /food/:id
+    * deletes the record with the specified id and returns the deleted item upon successful deletion
+
+  * Path: /clothing/:id
     * deletes the record with the specified id and returns the deleted item upon successful deletion
