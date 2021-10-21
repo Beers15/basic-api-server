@@ -16,7 +16,7 @@
 
   App deployed on Heroku [here](https://basic-api-server-lab03.herokuapp.com/)
 
-  Pull req from dev found [here]()
+  Pull req from dev found [here](https://github.com/Beers15/basic-api-server/pull/2)
 
 ## Uml Diagram
 
@@ -34,7 +34,7 @@
   * Path: /food
     * takes a JSON obj as input and returns the record that was added to the DB
 
-* REST Method UPDATE
+* REST Method PUT
   * Path: /food/:id
     * takes a JSON obj as input and returns the record that was updated in the DB, with updated data included
 
