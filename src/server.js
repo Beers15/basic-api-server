@@ -10,8 +10,6 @@ const _500 = require('./error-handlers/500');
 
 const foodRoutes = require('./routes');
 
-const port = process.env.PORT || 3000;
-
 app.use(express.json());
 app.use(logger);
 app.use(validator);
@@ -22,5 +20,5 @@ app.use(_500);
 
 module.exports = {
   app,
-  start: () => app.listen(port, console.log(`Server running on port ${port}`)),
+  start: (port) => app.listen(port, console.log(`Server running on port ${port}`)),
 };

@@ -8,13 +8,19 @@ console.log(process.env.NODE_ENV);
 
 let DATABASE_URL = process.env.DATABASE_URL || 'sqlite:memory';
 
-// actually connecting to a running database / or just use sqlite
-const sequelizeInstance = new Sequelize(DATABASE_URL);
-// is ready to consume models so that it can either validate that tables exist, or create those tables.
+const options = process.env.NODE_ENV === 'production' 
+  ? {
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false,
+      },
+    },
+  } : {};
 
-(async function () {
-  await sequelizeInstance.sync();
-})();
+// actually connecting to a running database / or just use sqlite
+const sequelizeInstance = new Sequelize(DATABASE_URL, options);
+// is ready to consume models so that it can either validate that tables exist, or create those tables.
 
 const FoodTable = FoodModel(sequelizeInstance, DataTypes);
 

@@ -16,7 +16,7 @@
 
   App deployed on Heroku [here](https://basic-api-server-lab03.herokuapp.com/)
 
-  Pull req from dev found [here]()
+  Pull req from dev found [here](https://github.com/Beers15/basic-api-server/pull/3)
 
 ## Uml Diagram
 
