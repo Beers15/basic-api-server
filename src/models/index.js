@@ -2,6 +2,7 @@
 
 require('dotenv').config();
 const { Sequelize, DataTypes } = require('sequelize');
+const ClothingModel = require('./clothing.js');
 const FoodModel = require('./food.js');
 
 console.log(process.env.NODE_ENV);
@@ -23,8 +24,10 @@ const sequelizeInstance = new Sequelize(DATABASE_URL, options);
 // is ready to consume models so that it can either validate that tables exist, or create those tables.
 
 const FoodTable = FoodModel(sequelizeInstance, DataTypes);
+const ClothingTable = ClothingModel(sequelizeInstance, DataTypes);
 
 module.exports = {
   db: sequelizeInstance,
   Food: FoodTable,
+  Clothing: ClothingTable,
 };

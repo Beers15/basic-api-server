@@ -21,6 +21,7 @@
 ## Uml Diagram
 
 ![diagram](./basic-api-server.png)
+^Plus /clothing route
 
 ## Routes
 

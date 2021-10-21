@@ -1,7 +1,7 @@
 'use strict';
 
-const { db, Food } = require('../src/models');
-
+//both models have same schema, including test for just 1 model
+const { db, Food } = require('../src/models/');
 // Initialize any things that our tests need
 beforeAll(async () => {
   await db.drop();

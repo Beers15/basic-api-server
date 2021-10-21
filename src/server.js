@@ -8,12 +8,14 @@ const validator = require('./middleware/validator');
 const _404 = require('./error-handlers/404'); 
 const _500 = require('./error-handlers/500'); 
 
-const foodRoutes = require('./routes');
+const foodRoutes = require('./routes/food');
+const clothingRoutes = require('./routes/clothing');
 
 app.use(express.json());
 app.use(logger);
 app.use(validator);
 app.use('/food', foodRoutes);
+app.use('/clothing', clothingRoutes);
 
 app.use(_404);
 app.use(_500);
