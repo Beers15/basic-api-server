@@ -4,6 +4,7 @@ const { db, Food } = require('../src/models');
 
 // Initialize any things that our tests need
 beforeAll(async () => {
+  await db.drop();
   // make sure that my tables exist.
   await db.sync(); // creates our tables if they do not exist
 });

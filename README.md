@@ -40,4 +40,4 @@
 
 * REST Method DELETE
   * Path: /food/:id
-    * deletes the record with the specified id and returns null upon successful deletion
+    * deletes the record with the specified id and returns the deleted item upon successful deletion
