@@ -35,7 +35,7 @@
   * Path: /food
     * takes a JSON obj as input and returns the record that was added to the DB
 
-* REST Method UPDATE
+* REST Method PUT
   * Path: /food/:id
     * takes a JSON obj as input and returns the record that was updated in the DB, with updated data included
 
