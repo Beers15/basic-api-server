@@ -2,7 +2,7 @@
 
 const app = require('../src/server.js');
 const supertest = require('supertest');
-const { db } = require('../src/models');
+const { db } = require('../src/models/');
 const request = supertest(app.app);
 
 // Initialize any things that our tests need
