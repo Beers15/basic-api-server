@@ -6,11 +6,11 @@
 
 ## Summary of Problem Domain
 
-  Application created with the purpose practicing the following:
+  Application created with the purpose of practicing the following skills:
   
-  Testing middleware, routes, and database operations using Jest
+  Middleware, routes, and database operations testing using Jest
 
-  Creating an express API that follows the REST standard and performs CRUD operations on a SQL DB
+  Creating express APIs that follows the REST standard and perform CRUD operations on a SQL DB
 
 ## Links to application deployment
 
